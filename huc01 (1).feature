@@ -271,11 +271,11 @@ Scenario: E02: Traducción incorrecta de Lenguaje de Señas a Audio de Voz
 
         Given que me encuentro en mi horario laboral, dictando clases
         When   reciba la notificación respectiva a una actualización del software 
-        And   ry me pida que actualice de inmediato
-        Then   la pospondré hasta que culmine el desarrollo de mis clases.
+        And   y me pida que actualice de inmediato
+        Then   no podre posponer la actualizacion porque no me llega la notifcacion y, como consecuencia perdere tiempo de clases
         Examples:
             | notificacion de actualizacion |  actualizacion  |
-            | activada  | pospuestas  | 
+            | activada  | no pospuesta  |  
 
 
              Feature: US012:  Como profesor, quiero que el software ocupe 50MB o menos dentro de mi dispositivo móvil o PC, para que no se ralentice mi equipo durante el desarrollo de las clases.
